@@ -126,6 +126,9 @@
     .line2{
         padding-top: 15px !important;
     }
+    #kurzy p{
+        margin-right: 20px !important;
+    }
 }
 @media screen and (max-width: 410px){
     .informace li{
@@ -145,8 +148,11 @@
     #technicke_dovednosti{
         margin-left: -10px !important;
     }
+    #ridicak p{
+        font-size: 18px !important;
+    }
 }
-
+/* Základní verze CV */
 body{
     font-family: 'Cairo', sans-serif;
     margin-top: 40px;
@@ -156,13 +162,49 @@ body{
         to left,
         rgb(128, 223, 255), rgb(0, 172, 230));
 }
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+aside{
+    width: 25%;
+    border: 5px solid #c68853;
+    border-right: none;
+    background-color: #ebd8c6;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-bottom: 40px;
+}
+main{
+    width: 75%;
+    border: 5px solid #c68853;
+    border-left: none;
+    background-color: #f2e5d9;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.photo{
+    text-align: center;
+    margin-top: 40px;
+}
+#info{
+    height: 135px;
+    padding-top: 10px;
+}
+.Name{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+/* Boční panel */
 .face{
     width: 165px;
     border-radius: 50%;
     border: 8px solid orange ;
-}
-#education{
-    min-height: 150px ;
 }
 .skolypng{
     width: 55px;
@@ -277,45 +319,8 @@ body{
     margin-right: auto;
     color: rgba(198, 136,83, 0.5);
 }
-.container{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-aside{
-    width: 25%;
-    border: 5px solid #c68853;
-    border-right: none;
-    background-color: #ebd8c6;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding-bottom: 40px;
-}
-.main{
-    width: 75%;
-    border: 5px solid #c68853;
-    border-left: none;
-    background-color: #f2e5d9;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.photo{
-    text-align: center;
-    margin-top: 40px;
-}
-#info{
-    height: 135px;
-    padding-top: 10px;
-}
-.Name{
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 25px;
-}
-/* Section 2 */
+
+/* Section 1 */
 .informace{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -333,6 +338,7 @@ aside{
     border-radius: 10px;
     background-color: orange;
 }
+
 /* Section 2 */
 #vzdelani{
     min-height: 150px;
@@ -352,7 +358,6 @@ aside{
     padding-right: 5px;
     border: 3px solid orange;
     border-radius: 10px;
-    /* background-color: #D3D3D3 ; */
     background-image: linear-gradient(
         to left,
         rgb(211,211,211), rgb(169,169,169));
@@ -374,7 +379,7 @@ aside{
 
 /* Section 3 */
 #praxe{
-    height: 355px;
+    min-height: 355px;
     display: flex;
 }
 .firmy{
@@ -393,8 +398,7 @@ aside{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 20px;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 .nazev_firmy{
     font-size: 20px;
@@ -403,6 +407,7 @@ aside{
 .firmy p{
     font-weight: bold;
 }
+
 /* Section 4 */
 #kurzy{
   min-height: 95px;  
@@ -426,6 +431,7 @@ aside{
     font-weight: bold;
     font-size: 18px;
 }
+
 /* Section 5 */
 #jazykove_znalosti{
     min-height: 175px ;
@@ -468,7 +474,8 @@ aside{
     font-weight: bold;
     font-size: 18px;
 }
-/* Section 5 */
+
+/* Section 6 */
 #ridicak{
     min-height: 85px;
 }
@@ -480,7 +487,8 @@ aside{
     border-bottom: 3px solid orange;
     display: inline-block;
 }
-/* Section 6 */
+
+/* Section 7 */
 #technicke_dovednosti{
     height: 95px;
     margin-left: 25px;
@@ -495,14 +503,15 @@ aside{
     grid-template-columns: 1fr 1fr 1fr;
 }
   
-  .programy li::before {
-    content: "\2022" ;  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: orange; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+.programy li::before {
+    content: "\2022" ;  
+    color: orange; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
 /* Section 8 */
 #zajmy{
     min-height: 100px;
