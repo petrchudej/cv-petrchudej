@@ -39,7 +39,7 @@
 
     }
     .informace li{
-        margin-bottom: 10px !important;
+        margin-bottom: 15px !important;
     }
     
 }
@@ -177,7 +177,7 @@ aside{
     border-bottom-left-radius: 15px;
     padding-bottom: 40px;
 }
-main{
+.main{
     width: 75%;
     border: 5px solid #c68853;
     border-left: none;
@@ -204,7 +204,7 @@ main{
 .face{
     width: 165px;
     border-radius: 50%;
-    border: 8px solid orange ;
+    border: 8px solid rgb( 243, 156, 18);
 }
 .skolypng{
     width: 55px;
@@ -341,7 +341,9 @@ main{
     font-size: 17px;
     border: 3px solid rgba(0,0,0, 0.4);
     border-radius: 10px;
-    background-color: orange;
+    background-image: linear-gradient(
+        to left,
+        rgb( 247, 220, 111), rgb( 243, 156, 18));
 }
 
 /* Section 2 */
