@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@media screen and (max-width: 901px) {
+    .skoly p{
+        margin-right: 80px !important; 
+        margin-left: 20px !important;
+    }
+    .skolypng{
+        margin-top: 95px !important;
+    }
+    .workpng{
+        margin-top: 200px !important;
+    }
+}
+@media screen and (max-width: 829px) {
+    .skoly p{
+        margin-right: 20px !important; 
+    }
+}
+@media screen and (max-width: 765px) {
+    aside{
+        display: none !important; 
+    }  
+    .main{
+        width: 100% !important;
+        border: 5px solid #c68853 !important;
+        border-radius: 15px;
+    }
+    .informace{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        width: 95% !important;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .informace li{
+        margin-bottom: 10px !important;
+    }
+    
+}
+@media screen and (max-width: 636px){
+    #zajmy p{
+        padding-bottom: 30px !important;
+        
+    }
+}
+@media screen and (max-width: 607px){
+    .informace{
+        display: block !important;
+        width: 70% !important;
+        margin-right: auto;
+        margin-left: auto;
+        text-align:center !important;
+    }
+    .line1 hr{
+        margin-top: 120px !important;
+    }
+    .main{
+        text-align: center;
+    }
+    .skoly{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .skoly h2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .firmy{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .firmy h2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #kurzy{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #kurzy h2{
+        margin-left: 0 !important;
+    }
+    .anglictina{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .anglictina h2{
+        margin-left: 0 !important;
+    }
+    .cestina{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .cestina h2{
+        margin-left: 0 !important;
+    }
+    #ridicak{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #ridicak p{
+        margin-left: 0 !important;
+    }
+    #ridicak .moto{
+        margin-right: 10px !important;
+    }
+    #ridicak .auto{
+        margin-left: 10px !important;
+    }
+    #technicke_dovednosti{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #zajmy p{
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+}
+@media screen and (max-width: 443px){
+    .line2{
+        padding-top: 15px !important;
+    }
+    #kurzy p{
+        margin-right: 20px !important;
+    }
+}
+@media screen and (max-width: 410px){
+    .informace li{
+        font-size: 15px !important;
+    }
+    #technicke_dovednosti ul li{
+        font-size: 85%;
+    }
+    #zajmy p{
+        font-size: 95% !important;
+    }
+}
+@media screen and (max-width: 391px){
+    .line3{
+        padding-top: 20px !important;
+    }
+    #technicke_dovednosti{
+        margin-left: -10px !important;
+    }
+    #ridicak p{
+        font-size: 18px !important;
+    }
+}
+/* Základní verze CV */
+body{
+    font-family: 'Cairo', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    background-image: linear-gradient(
+        to left,
+        rgb(128, 223, 255), rgb(0, 172, 230));
+}
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+aside{
+    width: 25%;
+    border: 5px solid #c68853;
+    border-right: none;
+    background-color: #ebd8c6;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-bottom: 40px;
+}
+main{
+    width: 75%;
+    border: 5px solid #c68853;
+    border-left: none;
+    background-color: #f2e5d9;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.photo{
+    text-align: center;
+    margin-top: 40px;
+}
+#info{
+    height: 135px;
+    padding-top: 10px;
+}
+.Name{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+/* Boční panel */
+.face{
+    width: 165px;
+    border-radius: 50%;
+    border: 8px solid orange ;
+}
+.skolypng{
+    width: 55px;
+    margin-top: 55px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.obr1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 5px;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+}
+.active:hover,
+.active:active{
+    scale: 90%;
+    cursor: pointer;
+}
+.workpng{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+}
+.obr2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+}
+.coursepng{
+    width: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 145px;
+}
+.obr3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-bottom: 3px solid orange;
+    display: inline-block
+}
+.languagepng{
+    width: 85px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+.obr4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    border-bottom: 3px solid orange;
+    display: inline-block
+}
+.drivepng{
+    width: 45px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.obr5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+}
+.skillpng{
+    width: 50px;
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.obr6{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -5px;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+}
+.hobbiespng{
+    width: 50px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.obr7{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+
+}
+.line{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(198, 136,83, 0.5);
+}
+
+/* Section 1 */
+.informace{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.informace li {
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding: 3px;
+    padding-left: 5px; 
+    padding-right: 5px; 
+    font-size: 17px;
+    border: 3px solid rgba(0,0,0, 0.4);
+    border-radius: 10px;
+    background-color: orange;
+}
+
+/* Section 2 */
+#vzdelani{
+    min-height: 150px;
+}
+.skoly{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.skola1{
+    display: block;
+}
+.skola2{
+    display: block;
+}
+.skoly h2{
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to left,
+        rgb(211,211,211), rgb(169,169,169));
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.skoly p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px;
+}
+.zakladka{
+    margin-top: 25px;
+}
+
+/* Section 3 */
+#praxe{
+    min-height: 355px;
+    display: flex;
+}
+.firmy{
+    margin-left: 35px;
+    margin-top: 15px;
+}
+.firmy h2{
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to left,
+        rgb(211,211,211), rgb(169,169,169));   
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;    
+}
+.nazev_firmy{
+    font-size: 20px;
+    font-weight: bold;
+}
+.firmy p{
+    font-weight: bold;
+}
+
+/* Section 4 */
+#kurzy{
+  min-height: 95px;  
+}
+#kurzy h2{
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to left,
+        rgb(211,211,211), rgb(169,169,169));
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+#kurzy p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Section 5 */
+#jazykove_znalosti{
+    min-height: 175px ;
+}
+.anglictina h2 {
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to left,
+        rgb(211,211,211), rgb(169,169,169));
+    margin-bottom: 20px;
+    margin-top: 25px;
+}  
+.anglictina p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+}
+.cestina h2{
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to left,
+        rgb(211,211,211), rgb(169,169,169));
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.cestina p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Section 6 */
+#ridicak{
+    min-height: 85px;
+}
+#ridicak p{
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+}
+
+/* Section 7 */
+#technicke_dovednosti{
+    height: 95px;
+    margin-left: 25px;
+}
+.programy{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    list-style: none; /* Remove default bullets */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  
+.programy li::before {
+    content: "\2022" ;  
+    color: orange; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+/* Section 8 */
+#zajmy{
+    min-height: 100px;
+}
+#zajmy p {
+    margin-left: 40px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
