@@ -221,6 +221,11 @@ main{
     border-bottom: 3px solid orange;
     display: inline-block;
 }
+.active:hover,
+.active:active{
+    scale: 90%;
+    cursor: pointer;
+}
 .workpng{
     width: 50px;
     display: block;
