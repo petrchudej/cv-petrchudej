@@ -176,6 +176,7 @@ aside{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-bottom: 40px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
 }
 .main{
     width: 75%;
@@ -184,6 +185,7 @@ aside{
     background-color: #f2e5d9;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
 }
 .photo{
     text-align: center;
@@ -205,6 +207,7 @@ aside{
     width: 165px;
     border-radius: 50%;
     border: 8px solid rgb( 243, 156, 18);
+    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
 }
 .skolypng{
     width: 55px;
@@ -344,6 +347,7 @@ aside{
     background-image: linear-gradient(
         to left,
         rgb( 247, 220, 111), rgb( 243, 156, 18));
+    box-shadow: 0px 0px 10px rgba(0,0,0,.4); 
 }
 
 /* Section 2 */
@@ -372,6 +376,7 @@ aside{
     font-size: 18px;
     margin-bottom: 10px;
     margin-left: 15px;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.4); 
 }
 .skoly p{
     font-size: 18px;
@@ -405,7 +410,8 @@ aside{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 20px;
-    display: inline-block;    
+    display: inline-block;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.4);    
 }
 .nazev_firmy{
     font-size: 20px;
@@ -432,6 +438,7 @@ aside{
         rgb(211,211,211), rgb(169,169,169));
     margin-bottom: 20px;
     margin-top: 25px;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.4); 
 }
 #kurzy p{
     display: inline-block;
@@ -456,6 +463,7 @@ aside{
         rgb(211,211,211), rgb(169,169,169));
     margin-bottom: 20px;
     margin-top: 25px;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.4); 
 }  
 .anglictina p {
     display: inline-block;
@@ -475,6 +483,7 @@ aside{
         rgb(211,211,211), rgb(169,169,169));
     margin-bottom: 10px;
     margin-top: 20px;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.4); 
 }
 .cestina p{
     display: inline-block;
