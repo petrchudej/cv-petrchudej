@@ -209,6 +209,14 @@ aside{
     border: 8px solid rgb( 243, 156, 18);
     box-shadow: 0px 0px 20px rgba(0,0,0,.4);
 }
+.scaleup{
+    transition: .3s;
+}
+.scaleup:hover,
+.scaleup:active{
+    scale: 105%;
+    cursor: pointer;
+}
 .skolypng{
     width: 55px;
     margin-top: 55px;
@@ -223,6 +231,9 @@ aside{
     padding-right: 5px;
     border-bottom: 3px solid orange;
     display: inline-block;
+}
+.active{
+    transition: .3s;
 }
 .active:hover,
 .active:active{
